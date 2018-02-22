@@ -246,11 +246,11 @@ void UndirectedGraph::minWeightMatching() {
 			}
 		}
 
-		for (int i = 0; i < V; i++)
+		/*for (int i = 0; i < V; i++)
 		{
 			base[i] = i;
 			blossom[i] = false;
-		}
+		}*/
 
 		//calculate max matching in admissable graph
 		maxMatching(adj);

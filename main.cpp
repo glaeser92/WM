@@ -1,9 +1,10 @@
 #include <iostream>
 #include "UndirectedGraph.h"
+#include "Blossom.h"
 
 int main() {
 
-	UndirectedGraph g(8);
+	/*UndirectedGraph g(8);
 	g.addEdge(0, 1, 19);
 	g.addEdge(0, 2, 8);
 	g.addEdge(0, 3, 8);
@@ -33,7 +34,17 @@ int main() {
 	g.addEdge(5, 7, 19);
 	g.addEdge(6, 7, 37);
 
-	g.minWeightMatching();
+	g.minWeightMatching();*/
+
+	Blossom b(1);
+	b.addNode(1);
+	b.addNode(3);
+	b.addNode(5);
+
+	b.print();
+
+	system("pause");
+
 
 	return 0;
 }
